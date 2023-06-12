@@ -34,9 +34,15 @@ assert() {
 }
 
 
-# 调用assert 期待值 传入值
-assert 0 0
+# 调用`assert <期待值> <传入值>`
 
+
+#  commit1: 简单的返回一个数字
+assert 0 0
 assert 42 42
+
+
+# commit2: 实现简单的加减运算(1-2+3)
+assert 234 123-234+345
 
 echo OK
